@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans'); /* This is the same font we use in the app */
+
+* {
+    background: transparent!important;              /* Make everything have transparent bg - we'll set the blue bg color in body */
+    font-family: 'Open Sans', sans-serif!important;
+    text-shadow:0px 0px 0px transparent!important;
+    color: #ffffff!important;
+    border:none!important;
+    box-shadow: none!important;
+    overflow:visible;                               /* Set to visible in an attempt to disable scrolling (a scroll hijacker had to be made in the activity as well) */
+    -webkit-touch-callout: none!important; /* Disable text selection for everything! Note: text selection on input fields is always possible... */
+    -webkit-user-select: none!important;
+     -khtml-user-select: none!important;
+       -moz-user-select: none!important;
+        -ms-user-select: none!important;
+            user-select: none!important;
+}
+
+input {
+    /* Input fields */
+    border: 0.5vh solid #ffffff!important;
+    opacity: 1!important;
+    background:transparent!important;
+    width: 100%!important;
+}
+.ui-input-text {
+    /* Minimum width of text fields */
+    min-width:10vw;
+}
+
+
+body>div {
+    /* Make sure the main div container fits the entire width */
+    width: 100%!important;
+    margin: 0!important;
+    min-width: 100%!important;
+}
+
+body {
+    /* Make sure the body fits the entire width */
+    margin: 0!important;
+    width: 100%!important;
+    background: #0e9dd8!important;
+}
+
+.ui-header {
+    /* Hide the header with title and nav controls; we'll use our own action bar in the app for that purpose */
+    display: none!important;
+}
+
+
+/* Font sizes */
+
+* {
+    font-size: 23px!important;
+    font-weight:700px!important;
+}
+
+/* Footer */
+.ui-footer * {
+    /* Contains 'ePay / Payment Solutions' text */
+    font-size: 15px!important;
+}
+
+/* "TEST ONLY" message */
+.ui-bar-e {
+    display:none!important;
+}
+
+.expdivider {
+    /* The slash between the month and year fields */
+    width: 35px;
+    height: 100%;
+    font-size: 60px!important;
+    line-height: 1.1;
+}
+
+li[data-role="fieldcontain"] input {
+    /* Card no. input field */
+    width:93.5%!important;
+}
+
+
+.content-primary .ui-listview>li {
+    /* Container for input fields (minus Submit btn, cause it's absolute) and order info */
+    width: 100%!important;
+    margin:0!important;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    padding-top: 0;
+}
+
+.ui-block-cvc {
+    /* CVC field (label overflows) */
+    line-height: 1.2;
+    margin-left: 20px;
+    width: 12%!important;
+}
+
+.ui-block-cvc>div {
+    /* Make the CVC field fill 100% of parent element (above) */
+    width: 100%!important;
+}
+
+.ui-li-divider {
+    /* Hide the 'Information' text */
+    display: none!important;
+}
+
+fieldset .ui-block-a {
+    /* Expiration date fields (and label) */
+    width: 38%!important;
+}
+
+ul:last-of-type .ui-li-static, ul:last-of-type .ui-li-static * {
+    /* Common selector for both order info elements (amount and orderID) */
+    width: auto;
+    margin: 0!important;
+    padding-bottom: 2px;
+    display: inline;
+    display: inline-block!important;
+    overflow: visible;
+}
+ul:last-of-type .ui-li-static p {
+    /* Common selector for amount value (eg. 'DKK 104,95') AND orderID value (eg. '765q6789876') */
+    text-align:left!important;
+    position: relative;
+    width: 100%;
+    display: inline-block!important;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    font-weight: 300!important;
+}
+
+ul:last-of-type li:first-of-type + li, ul:last-of-type li:first-of-type + li {
+    /* The 'amount' part of the order info list */
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    margin: 0!important;
+    width: 50%!important;
+    /* word-break: break-all; */
+    white-space: pre-lilne;
+}
+
+ul:last-of-type li:first-of-type + li + li, ul:last-of-type li:first-of-type + li + li {
+    /* The 'orderID' part of the order info list */
+    width: 100%!important;
+    overflow: visible;
+    position: absolute;
+    display: inline!important;
+    text-align: left;
+    left: 0%;
+    margin-top: 2.5%!important;
+}
+
+ul:last-of-type li:first-of-type + li + li *, ul:last-of-type li:first-of-type + li + li * {
+    /* The contents of the 'orderID' part of the order info list */
+    font-size: 14px!important;
+    position: relative;
+    left: 0;
+    text-align: right;
+    width: auto!important;
+}
+
+ul:last-of-type li:first-of-type + li + li + li, ul:last-of-type li:first-of-type + li + li + li {
+    /* Hides the text that simply says "Betaling" */
+    display:none!important;
+}
+
+.ui-btn {
+    /* Submit button */
+    position: absolute!important;
+    bottom: 20%!important;
+    left:0;
+    width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding: 0;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.ui-btn:hover, .ui-btn:active {
+    /* Click effect on btn */
+    background-color: #ffffff!important;
+    color: #0e9dd8!important;
+}
+
+
+.ui-input-text input {
+    /* Make input fields have white bg and blue text */
+    background: #ffffff!important;
+    color: #0e9dd8!important;
+}
+
+
+
+ul[data-role="listview"]:last-of-type, ul[data-role="listview"]:last-of-type + h1 {
+    /* The list with order info AND the available cards field */
+    margin: 0;
+    text-align:left;
+    font-size: 30px;
+    width: 100%!important;
+    height: auto;
+    text-overflow: ellipsis;
+    display: inline-block;
+    margin-top: -100px!important;
+}
+
+ul[data-role="listview"]:last-of-type + h1 {
+    /* Selects the element containing available card types */
+    width: 100%;
+    text-align:center;
+    margin-top: 3%!important;
+}
+
+input {
+    /* Center-align all input fields */
+    text-align: center!important;
+}
+li[data-role="fieldcontain"] input {
+    /* Override above rule for the card no. field */
+    text-align:left!important;
+}
+
+strong::after {
+    /* Adds a colon after 'Amount' and 'OrderID' headings */
+    content: ":";
+}
+
+.ui-block-a label::after {
+    /* Add (MM/YY) guide after 'Exp. date' */
+    content: " (MM/YY)";
+    font-weight: 300;
+}
+
+input[maxlength="2"], input[maxlength="3"], input[maxlength="4"] {
+    /* Mask input characters for month, year and CVC fields */
+    -webkit-text-security: disc;
+    -moz-text-security: disc;
+    text-security: disc;
+}
