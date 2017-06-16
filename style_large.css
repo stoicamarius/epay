@@ -181,7 +181,6 @@ ul:last-of-type li:first-of-type + li + li + li, ul:last-of-type li:first-of-typ
     vertical-align:middle;
     margin-bottom: 14vw;
     padding-bottom: 3.5vw;
-    margin-right: -2vw;
     padding-top: 3.5vw;
 }
 .ui-btn:hover, .ui-btn:active {
