@@ -176,13 +176,12 @@ ul:last-of-type li:first-of-type + li + li + li, ul:last-of-type li:first-of-typ
     text-align: center;
     right:0;
     bottom:0;
-    height: 5vw;
     width: 25vw;
-    font-weight: bold;
     text-align:center; 
     vertical-align:middle;
-    padding: 0px;
     margin-bottom: 14vw;
+    padding-bottom: 15vw;
+    padding-top: 15vw;
 }
 .ui-btn:hover, .ui-btn:active {
     /* Click effect on btn */
