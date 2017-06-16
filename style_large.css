@@ -175,7 +175,7 @@ ul:last-of-type li:first-of-type + li + li + li, ul:last-of-type li:first-of-typ
     position: absolute!important;
     text-align: center;
     right:0;
-    bottom:0;
+    bottom:-1;
     width: 25vw;
     text-align:center; 
     vertical-align:middle;
