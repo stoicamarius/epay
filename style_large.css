@@ -174,9 +174,9 @@ ul:last-of-type li:first-of-type + li + li + li, ul:last-of-type li:first-of-typ
     /* Submit button */
     position: absolute!important;
     right:0;
-    bottom 0;
-    width: 30vw;
-    height: 13vw
+    bottom:0;
+    height: 10vw;
+    width: 20vw;
     margin-bottom: 2vw;
     margin-right: 3vw;
     padding: 0;
