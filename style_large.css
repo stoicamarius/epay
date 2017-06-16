@@ -173,8 +173,10 @@ ul:last-of-type li:first-of-type + li + li + li, ul:last-of-type li:first-of-typ
 .ui-btn {
     /* Submit button */
     position: absolute!important;
+    text-align: center;
     right:0;
     bottom:0;
+    height: 5vw;
     width: 25vw;
     margin-bottom: 14vw;
     margin-right: 5vw;
