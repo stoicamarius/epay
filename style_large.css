@@ -180,9 +180,9 @@ ul:last-of-type li:first-of-type + li + li + li, ul:last-of-type li:first-of-typ
     text-align:center; 
     vertical-align:middle;
     margin-bottom: 14vw;
-    padding-bottom: 4vw;
-    margin-right: -1.5vw;
-    padding-top: 4vw;
+    padding-bottom: 3.5vw;
+    margin-right: -2vw;
+    padding-top: 3.5vw;
 }
 .ui-btn:hover, .ui-btn:active {
     /* Click effect on btn */
